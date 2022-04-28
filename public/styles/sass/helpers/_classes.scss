@@ -1,0 +1,101 @@
+.image-1 {
+    height: 500px;
+    background: url("/public/images/hero-background.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0 0%;
+}
+
+.image-2 {
+    height: 680px;
+    .path {
+        mask-image: url("/public/images/path.svg");
+        -webkit-mask-image: url("/public/images/path.svg");
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: 100% 0%;
+        background: url("/public/images/retro-sky.jpg") no-repeat;
+        background-size: 140% 140%;
+        background-position: 0% 0%;
+    }
+}
+
+.image-3 {
+    position: relative;
+    right: -23px;
+}
+
+.hgroup {
+    .large-title {
+        font-size: 5em;
+        img {
+            height: 90px;
+        }
+    }
+
+    .large-title,
+    .sub-text {
+        font-family: "cormorant-regular";
+    }
+    .sub-text {
+        font-size: 2.2em;
+        span {
+            font-family: "cormorant-bold";
+        }
+    }
+}
+
+.mt-107 {
+    margin-top: 107px;
+}
+
+.golden-record {
+    @include animation(goldenRecord 16s linear infinite forwards);
+}
+
+.border-gradient {
+    @include linearGradient(-90deg, #937d52, #d1c4aa, #dadada);
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 0px black;
+    &--big {
+        box-shadow: 14px 14px 0px black;
+    }
+}
+
+.not-valid {
+    border-bottom-color: red !important;
+    &-style {
+        opacity: 1 !important;
+        .tooltip-arrow {
+            &::before {
+                border-top-color: rgb(77, 77, 77);
+            }
+        }
+        .tooltip-inner {
+            background-color: white;
+            border: 1px solid rgb(77, 77, 77);
+            color: rgb(77, 77, 77);
+        }
+    }
+}
+
+.lineShrink {
+    @include animation(line__shrink 500ms ease-in-out forwards);
+}
+.lineEnlarge {
+    @include animation(line__enlarge 500ms ease-in-out forwards);
+}
+
+.title--active {
+    .title-cover-text {
+        @include transform(scale(0.5) translateX(90%) rotate(-90deg));
+        h1 {
+            font-family: "cormorant-bold";
+        }
+    }
+    .items {
+        @include transform(translateX(0%) !important);
+    }
+}

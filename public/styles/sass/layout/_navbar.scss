@@ -1,0 +1,30 @@
+nav {
+    right: 10px;
+    ul {
+        li {
+            @extend .border-gradient;
+            padding: 6px 1px 7.5px 1px;
+            a {
+                padding: 8.5px;
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                font-family: "cormorant-regular";
+                &:hover {
+                    color: black;
+                }
+            }
+            &:hover {
+                @extend .box-shadow;
+            }
+        }
+        li[data-target="language"] {
+            select {
+                &:focus {
+                    box-shadow: none;
+                    border-color: inherit;
+                }
+            }
+        }
+    }
+}

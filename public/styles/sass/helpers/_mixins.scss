@@ -1,0 +1,64 @@
+@mixin linearGradient($args...) {
+    background: -webkit-linear-gradient($args);
+    background: -moz-linear-gradient($args);
+    background: -o-linear-gradient($args);
+    background: linear-gradient($args);
+}
+
+@mixin backgroundClip($args...) {
+    -webkit-background-clip: $args;
+    -moz-background-clip: $args;
+    background-clip: $args;
+}
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    -moz-transform: $args;
+    -ms-transform: $args;
+    -o-transform: $args;
+    transform: $args;
+}
+
+@mixin filter($args...) {
+    -webkit-filter: $args;
+    -ms-filter: $args;
+    filter: $args;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin animation($args...) {
+    animation: $args;
+    -o-animation: $args;
+    -moz-animation: $args;
+    -webkit-animation: $args;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin object-fit-pos($width: 100%, $height: 100%, $fill-mode: cover, $position: center) {
+    width: $width;
+    height: $height;
+    object-fit: $fill-mode;
+    -o-object-fit: $fill-mode;
+    object-position: $position;
+    -o-object-position: $position;
+}

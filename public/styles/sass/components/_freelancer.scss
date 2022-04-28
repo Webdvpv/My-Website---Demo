@@ -1,0 +1,40 @@
+#freelancer {
+    .freelancer {
+        @include transition(all 300ms ease-in-out);
+        font-family: "cormorant-regular";
+        &::after {
+            content: "";
+            position: absolute;
+            align-self: center;
+            transform: rotate(90deg);
+            border: 9px solid #313131;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            @include animation(arrow 1s linear alternate infinite);
+        }
+        .social-media-links {
+            ul {
+                li {
+                    @include transition(all 0.3s cubic-bezier(1, -0.93, 0.14, 1.68));
+                    &:hover {
+                        @include transform(rotate(25deg));
+                    }
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+
+                        img {
+                            height: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .freelancer {
+            left: 10% !important;
+        }
+    }
+}

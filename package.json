@@ -1,0 +1,24 @@
+{
+  "name": "node_mywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "mon": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": ">=3.1.7",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.2",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  }
+}

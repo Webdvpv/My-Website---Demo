@@ -1,0 +1,54 @@
+form {
+    font-family: "cormorant-medium";
+    & {
+        font-size: 15pt;
+    }
+    input:not([type="checkbox"]),
+    textarea,
+    button {
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid #dddddd;
+        border-radius: 0 !important;
+        padding-left: 0 !important;
+        &:focus {
+            border-bottom-color: #3a3a3a;
+            box-shadow: none !important;
+        }
+    }
+    input + label,
+    textarea + label {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    button {
+        font-size: 15pt !important;
+    }
+
+    textarea {
+        min-height: 58px !important;
+        max-height: 200px;
+    }
+    input[type="checkbox"] {
+        border-radius: 0 !important;
+        &:focus,
+        &:checked {
+            border-color: #212529;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:checked {
+            background-color: #212529;
+        }
+    }
+    small {
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

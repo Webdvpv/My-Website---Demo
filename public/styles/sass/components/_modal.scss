@@ -1,0 +1,64 @@
+.custom-modal {
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    padding: 3% 0;
+
+    .custom-modal-header {
+        .close {
+            cursor: pointer;
+            padding: 5px;
+            width: 35px;
+            aspect-ratio: 1;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                img {
+                    @include animation(closeButtonScale 1s linear infinite);
+                }
+            }
+        }
+    }
+
+    .custom-modal-container {
+        @extend .border-gradient;
+        @extend .box-shadow--big;
+        padding: 2px 1px 1px 1px;
+        width: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        scrollbar-width: none;
+
+        .custom-modal-content {
+            background-color: white;
+            height: auto;
+            max-height: 100%;
+            h1 {
+                font-size: 1.5em;
+                font-family: "cormorant-bold";
+            }
+            p {
+                font-size: 1em;
+                font-family: "cormorant-regular";
+            }
+            q {
+                font-size: 1.3em;
+                font-family: "cormorant-bold";
+            }
+        }
+    }
+
+    &#me {
+        img:not(.close > img) {
+            @include object-fit-pos();
+        }
+    }
+    &#references {
+        .reference {
+            font-family: "cormorant-regular";
+        }
+    }
+}

@@ -1,0 +1,60 @@
+<%- include("./layout/head.ejs") %>
+
+    <body class="h-100 bg-black">
+        <div class="container h-100 overflow-hidden bg-white">
+            <div class="row h-100">
+                <div class="col-4 h-100 mx-auto d-flex justify-content-center align-items-center">
+                    <form name="login" action="/adminaf" method="post">
+                        <h1>Why don't you just login?</h1>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="login_username" name="login_username"
+                                placeholder="User Name" required maxlength="16">
+                            <label for="login_username">User Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="login_password" name="login_password"
+                                placeholder="Password" required maxlength="16">
+                            <label for="login_password">Password</label>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating col-md-6 mb-3">
+                                <small><a href="" class="go-to-register text-muted">I haven't any ticket, register
+                                        me.</a></small>
+                            </div>
+                            <div class="form-floating col-md-6 mb-3"> <small><a href="" class="text-muted">I forgot my
+                                        f*cking
+                                        password!
+                                        Open the door!</a></small></div>
+                        </div>
+                        <button>Login</button>
+                        <div class="message"></div>
+                    </form>
+                </div>
+                <div class="col-4 h-100 mx-auto d-none justify-content-center align-items-center">
+                    <form name="register" method="post">
+                        <h1>Star Gate</h1>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="register_username" name="register_username"
+                                placeholder="User Name" required maxlength="16">
+                            <label for="register_username">User Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="register_password" name="register_password"
+                                placeholder="Password" required maxlength="16">
+                            <label for="register_password">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="register_email" name="register_email"
+                                placeholder="E-Mail" required maxlength="40">
+                            <label for="register_email">E-Mail</label>
+                        </div>
+                        <div class="form-floating mb-3"><small><a href="" class="go-to-login text-muted">I have a ticket
+                                    to enter. I
+                                    forgot it sry...</a></small></div>
+                        <button>Register me as a star</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%- include("./layout/footer.ejs") %>

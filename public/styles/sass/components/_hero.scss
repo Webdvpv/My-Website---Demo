@@ -1,0 +1,20 @@
+.hero {
+    .line {
+        width: 81px;
+        opacity: 1;
+    }
+    .name {
+        font-family: "cormorant-light";
+        font-size: 38px;
+        span {
+            font-family: "cormorant-semibold";
+        }
+    }
+    .title {
+        font-family: "cormorant-regular";
+        font-size: 19px;
+    }
+    .directors-chair {
+        height: 80%;
+    }
+}

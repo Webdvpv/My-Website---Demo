@@ -1,0 +1,50 @@
+@include keyframes(arrow) {
+    from {
+        left: 120%;
+    }
+    to {
+        left: 140%;
+    }
+}
+
+@include keyframes(goldenRecord) {
+    from {
+        @include transform(rotateZ(0deg));
+    }
+    to {
+        @include transform(rotateZ(360deg));
+    }
+}
+
+@include keyframes(closeButtonScale) {
+    from {
+        @include transform(scale(100%) rotateZ(0deg));
+    }
+    to {
+        @include transform(scale(1100%) rotateZ(90deg));
+    }
+}
+
+@include keyframes(line__shrink) {
+    0% {
+        width: 100%;
+        top: 0;
+    }
+    100% {
+        width: 20px;
+        margin-right: 10px;
+        top: -25px;
+    }
+}
+
+@include keyframes(line__enlarge) {
+    0% {
+        width: 20px;
+        margin-right: 10px;
+        top: -25px;
+    }
+    100% {
+        width: 100%;
+        top: 0;
+    }
+}

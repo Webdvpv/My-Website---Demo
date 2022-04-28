@@ -1,0 +1,138 @@
+.portfolio-gallery {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 400px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 400px;
+    grid-column-gap: 58px;
+    scrollbar-width: none;
+    .title {
+        position: relative;
+        border-bottom: 4px solid black;
+        overflow: hidden;
+        .counter {
+            width: 100px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .count {
+                font-size: 2em;
+                font-family: "roboto-thin";
+                @include transition(all 500ms ease-in-out 200ms);
+                background-color: black;
+                color: white;
+            }
+            .line {
+                height: 1px;
+                width: 100%;
+                background-color: black;
+                align-self: end;
+                @include transition(background-color 500ms linear);
+            }
+        }
+        &-cover-text {
+            font-family: "roboto-thin";
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            @include transition(color 500ms ease-in-out 200ms, all 500ms ease-in-out);
+        }
+        video {
+            width: 300%;
+            height: 300%;
+            top: -100%;
+            margin: 0 auto;
+            position: absolute;
+            z-index: 1;
+            left: -100%;
+            opacity: 0;
+        }
+        .black-bg {
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            background-color: black;
+            top: 0;
+            right: 0;
+            @include transition(width 300ms ease-out);
+            overflow: hidden;
+        }
+        .items {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            display: grid;
+            place-content: center;
+            grid-auto-flow: column;
+            @include transform(translateX(-100%));
+            @include transition(transform 300ms ease-out 200ms);
+            .item {
+                background-color: white;
+                padding: 6px;
+                display: inline-block;
+                color: black;
+                font-family: "cormorant-light";
+                margin: 0 2px;
+                .number {
+                    display: inline-block;
+                    border-radius: 50rem;
+                    padding: 0 3px;
+                    @include transition(all 300ms ease-out);
+                }
+                &:hover {
+                    .number {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .goIn {
+            position: absolute;
+            z-index: 1;
+            left: 20px;
+            bottom: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.6em;
+            padding: 0 10px;
+            @include transition(all 500ms ease-in-out 200ms);
+        }
+        &:hover {
+            .black-bg {
+                width: 100%;
+            }
+            .title-cover-text {
+                z-index: 1;
+                color: white;
+            }
+            .counter {
+                position: relative;
+                z-index: 1;
+                .count {
+                    background-color: white;
+                    color: black;
+                    margin-right: 10px;
+                }
+                .line {
+                    position: relative;
+                    background-color: white;
+                    top: 0;
+                }
+            }
+            .goIn {
+                color: white;
+                left: 40px;
+            }
+        }
+    }
+}

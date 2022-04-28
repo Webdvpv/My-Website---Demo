@@ -1,0 +1,1 @@
+cd public/styles && sass --watch sass/app.scss:css/app.css
