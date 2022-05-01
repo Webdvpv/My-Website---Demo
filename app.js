@@ -15,17 +15,18 @@ app.use(bodyParser.json())
 app.get("/", home)
 app.get("/signin", signin)
 app.get("/adminpanel", adminpanel)
+app.get("/tr", home2)
 app.post("/signin", (req, res, next) => {
     let username = req.body.username
     let password = req.body.password
     let email = req.body.email
     let formType = req.body.formType
 
-    /* ======================== */
-    /* ======================== */
-    /* MYSQL */
-    /* ======================== */
-    /* ======================== */
+    //     /* ======================== */
+    //     /* ======================== */
+    //     /* MYSQL */
+    //     /* ======================== */
+    //     /* ======================== */
     const dbConfigure = {
         host: 'localhost',
         user: 'root',
@@ -62,16 +63,9 @@ app.post("/signin", (req, res, next) => {
             }
         })
     }
-
-
 })
 
 app.post("/", (req, res, next) => {
-    if(req.body.language == "tr") {
-        app.get("/", home2)
-    } else {
-        app.get("/", home)
-    }
     res.end()
 })
 
@@ -83,7 +77,7 @@ app.post("/", (req, res, next) => {
     /* ======================== */
     const hostMail = "webdvpv@gmail.com"
     const service = "gmail"
-    const password = "******"
+    const password = ""
 
     let name = req.body.name
     let surname = req.body.surname
@@ -122,9 +116,10 @@ app.post("/", (req, res, next) => {
         if (error) return process.exit(1)
         else {
             transporter.close()
+            res.end()
         }
     })
-    res.end()
+
 })
 
 app.listen(port, function () {

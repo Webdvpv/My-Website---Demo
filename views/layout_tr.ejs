@@ -1,5 +1,485 @@
 <%- include("./layout/head.ejs") %>
 
     <body class="h-100 bg-black">
-dsfsdbahjfbfdsa
+        <div id="me" class="custom-modal position-fixed h-100" style="display: none;">
+            <div class="custom-modal-container">
+                <div class="custom-modal-header d-flex justify-content-end align-items-center p-2 bg-white"><span
+                        class="close bg-black d-flex justify-content-center align-items-center overflow-hidden"><img
+                            src="/public/images/close-button.svg" alt=""></span></div>
+                <div class="custom-modal-content">
+                    <div class="row mx-0">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <h1>Kimsin Sen?</h1>
+                            <p>Benim adım Volkan. 7 Eylül 1993'te doğdum. Eğer doğum günümü kutlamak isterseniz, bana
+                                bir e-posta gönderebilirsiniz.</p><br>
+                            <p>İzmir'de doğup büyüdüm. Yani bu yıllarca işsiz kalmak anlamına geliyor. Ama asla pes
+                                etmedim, her zaman çalışmaya ve kendimi geliştirmeye devam ettim. Denedim, ama nereye
+                                kadar! Sektörün acımasız kötü adamlarıyla yüz yüze geldim. Her şeyden sonra, gerçekten
+                                gerçek bir iş bulamadım. 2021'de Denizli'ye taşındım. Taşındıktan aylar sonra, İzmir
+                                merkezli bir otomasyon firmasında 6 kadar çalıştım. Sonra yine uzay boşluğundayım...</p>
+                            <br>
+                            <p>Şimdi karakterimi anlatmama izin verin ki nasıl birisini işe alacağınızı öğrenin. Ben
+                                çalışkan, yeni teknolojileri öğrenmeye hevesli, motivasyona ihtiyacı olan, biraz
+                                destekle, biraz sevgiyle büyük işler yapabilen, genellikle pragmatik düşünen, saygılı,
+                                dürüst, etik kavramına bağlı çok işlevli bir uzaylıyım. Kesinlikle dünyalı olduğumu
+                                iddia etmiyorum çünkü ben bu dünyadan olsaydım bu makaleyi okumazdınız. Daha samimi bir
+                                sohbet için özel olarak arzularınızı ifade edebilirsiniz.</p>
+                            <br>
+                            <p>Meraklıları için ilgi alanlarımı sıralıyorum: Doğa, bilim, sanat, uzay.</p>
+                            <br>
+                            <p> Genel aktivite olarak; İzmir'de iken kamplara, doğa yürüyüşlerine ve bisiklet turlarına
+                                katılırdım. Yeni insanlarla tanışmak, yeni deneyimler kazanmak için bir maceraya atıldım
+                                çünkü ben yapmasaydım kimse beni o maceraya sürüklemezdi. Bazen Konak'tan Alsancak'a
+                                yürürdüm. Alsancak'ın sokaklarında kendimi kaybederdim ve bilinçsizce dolaşırdım. Şimdi
+                                sadece bisiklet sürüyorum. Bazen ormana gidiyorum. İnsan zamanla alışıyor.</p>
+                            <hr>
+                            <q>Hayal kurmamış biri hiç yaşamamıştır.</q>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-4 px-0"><img class="w-100 h-100" src="/public/images/1.jpg" alt="">
+                                </div>
+                                <div class="col-4 px-0"><img class="w-100 h-100" src="/public/images/2.jpeg" alt="">
+                                </div>
+                                <div class="col-4 px-0"><img class="w-100 h-100" src="/public/images/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 px-0"><img class="w-100 h-100" src="/public/images/4.jpg" alt="">
+                                </div>
+                                <div class="col-6 px-0"><img class="w-100 h-100" src="/public/images/5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0"><img class="w-100 h-100" src="/public/images/6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0"><img class="w-100 h-100" src="/public/images/7.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="references" class="custom-modal position-fixed h-100" style="display: none;">
+            <div class="custom-modal-container">
+                <div class="custom-modal-header d-flex justify-content-end align-items-center p-2 bg-white"><span
+                        class="close bg-black d-flex justify-content-center align-items-center overflow-hidden"><img
+                            src="/public/images/close-button.svg" alt=""></span></div>
+                <div class="custom-modal-content">
+                    <div class="row mx-0">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="reference">
+                                <div class="brand-logo"></div>
+                                <div class="info">
+                                    <ul class="list-unstyled">
+                                        <li>Yönetici: ENGIN BAGDAS</li>
+                                        <li>Giriş Tarihi: 15.12.2020</li>
+                                        <li>Çıkış Tarihi: 10.06.2021</li>
+                                        <li>Rolüm: Front-End Developer</li>
+                                        <li><a href="https://enerotomasyon.com.tr" target="blank">İnternet sitesine git</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container overflow-hidden bg-white">
+            <div class="row">
+                <div class="lines position-relative d-flex align-items-center px-0">
+                    <nav class="position-absolute">
+                        <ul class="list-group list-group-horizontal list-unstyled">
+                            <li data-target="me"><a href=""><span>Ben</span></a></li>
+                            <li data-target="references" class="mx-3"><a href=""><span>Referanslar</span></a></li>
+                            <li data-target="language" class="p-0"><select id="language" class="form-select rounded-0"
+                                    aria-label="Default select example">
+                                    <option value="tr" selected>TR</option>
+                                    <option value="en">EN</option>
+                                </select></li>
+                        </ul>
+                    </nav>
+                    <img src="/public/images/lines.svg" class="w-100" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="hero d-flex justify-content-center justify-content-sm-start align-items-center ps-0">
+                    <div class="text-end">
+                        <h1 class="name d-flex align-items-center mb-0">
+                            <hr class="line d-none d-sm-block"><span>VOLKAN</span>COŞKUN
+                        </h1>
+                        <h2 class="title mb-0">UI ARTIST & DEVELOPER</h2>
+                    </div>
+                    <img class="directors-chair ms-2" src="/public/images/director-chair.svg" alt="Director"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="row">
+                <div id="freelancer" class="col-3 d-flex align-items-center" data-tilt>
+                    <div class="freelancer position-relative d-flex align-items-center">
+                        <div class="social-media-links me-4">
+                            <ul class="list-unstyled list-group list-horizontal">
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <a href="https://www.linkedin.com/in/volkan-coskun/" target="_blank">
+                                        <img src="/public/images/links/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+                                </li>
+                                <li class="mt-4 d-flex justify-content-center align-items-center">
+                                    <a href="https://github.com/Webdvpv" target="_blank">
+                                        <img src="/public/images/links/github.svg" alt="Github" loading="lazy"></a>
+                                </li>
+                                <li class="mt-4 d-flex justify-content-center align-items-center">
+                                    <a href="https://behance.net/8bitlikadam" target="_blank">
+                                        <img src="/public/images/links/behance.svg" alt="Behance" loading="lazy"></a>
+                                </li>
+                                <li class="mt-4 d-flex justify-content-center align-items-center">
+                                    <a href="https://8bitlikadam.volkancoskun.tk" target="_blank">
+                                        <img src="/public/images/links/8bitlikadam.svg" alt="8bitlikadam"
+                                            loading="lazy"></a>
+                                </li>
+                                <li class="mt-4 d-flex justify-content-center align-items-center">
+                                    <a href="https://webgaste.com" target="_blank">
+                                        <img src="/public/images/links/webgaste.svg" alt="8bitlikadam"
+                                            loading="lazy"></a>
+                                </li>
+                                <li class="mt-4 d-flex justify-content-center align-items-center">
+                                    <a href="/public/files/resume_volkan_coskun.docx">
+                                        CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>F<br>R<br>E<br>E<br>L<br>A<br>N<br>C<br>E<br>R</span>
+                    </div>
+                </div>
+                <div class="col-9 pe-0">
+                    <div class="image-1"></div>
+                </div>
+            </div>
+            <div class="row mt-107">
+                <div class="col-12">
+                    <%- include("components/hgroup.ejs", name="hero_tr" ) %>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-gallery">
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">01</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">YAYINDA</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="https://cheetahmac.com" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                                <a href="http://agrofood.com.tr/" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">02</div>
+                                    </div>
+                                </a>
+                                <a href="https://8bitlikadam.volkancoskun.tk" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">03</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">02</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">UI TASARIMI</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="/public/images/portfolio/ui-design/1.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                                <a href="/public/images/portfolio/ui-design/2.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">02</div>
+                                    </div>
+                                </a>
+                                <a href="/public/images/portfolio/ui-design/3.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">03</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">03</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">UI PROTOTİPİ</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="https://figma.fun/ZOdxd7" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                                <a href="https://figma.fun/mIajAW" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">02</div>
+                                    </div>
+                                </a>
+                                <a href="https://figma.fun/6NoetL" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">03</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">04</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">KODLAMA</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="/public/files/coding-sample.rar">
+                                    <div class="item text-center">
+                                        DOWNLOAD SAMPLE
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">05</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">KURUMSAL<br>KİMLİK TASARIMI</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="/public/images/portfolio/corporate-identity-design/1.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                                <a href="/public/images/portfolio/corporate-identity-design/2.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">02</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <!-- <div class="title">
+                            <div class="counter">
+                                <span class="count">05</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">MOCKUP</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <a class="goIn" href="">→</a>
+                        </div> -->
+                        <!-- <div class="title">
+                            <div class="counter">
+                                <span class="count">06</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">LANDING<br>PAGE DESIGN</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div> -->
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">06</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">SOSYAL MEDYA<br>İÇİN TASARIM</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="/public/images/portfolio/designs-for-social-media/1.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                                <a href="/public/images/portfolio/designs-for-social-media/2.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">02</div>
+                                    </div>
+                                </a>
+                                <a href="/public/images/portfolio/designs-for-social-media/3.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">03</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                        <!-- <div class="title">
+                            <div class="counter">
+                                <span class="count">08</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">EMAIL DESIGN</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <a class="goIn" href="">→</a>
+                        </div> -->
+                        <!-- <div class="title">
+                            <div class="counter">
+                                <span class="count">09</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">MOBILE<br>APP DESIGN</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <a class="goIn" href="">→</a>
+                        </div> -->
+                        <div class="title">
+                            <div class="counter">
+                                <span class="count">07</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="title-cover-text">
+                                <h1 class="w-100 text-center mb-0">İLHAM</h1>
+                            </div>
+                            <div class="black-bg"></div>
+                            <div class="items">
+                                <a href="/public/images/portfolio/inspiration/1.jpg" target="blank">
+                                    <div class="item text-center">
+                                        <div class="number">01</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="goIn" href="">→</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-107">
+                <div class="col-md-7">
+                    <div class="about">
+                        <%- include("components/hgroup.ejs", name="about_tr" ) %>
+                            <p>1993 - İzmir'de doğup büyüdüm. 2012'den beri kodluyor ve tasarlıyorum. Bir sitenin göze
+                                nasıl güzel görüneceğini, nasıl ilgi çekeceğini, nasıl daha hızlı bilgiye ulaştıracağını
+                                biliyorum. Kendini bana bırak ve aldığın hizmetin tadını çıkar. Emin ellerdesin.</p>
+                            <div class="row">
+                                <div class="col-12"><img class="golden-record float-end"
+                                        src="/public/images/golden-record.png" alt="Golden Record" loading="lazy">
+
+                                    <p>Bunu bir kenara bırakalım da özel hayatıma girelim. Uzay, yıldızlar,
+                                        keşfedilmemiş uzak yerler, retro olan her şey beni özellikle ilgilendirir. Daft
+                                        Punk ve Parcels dinlerken hayal kurarım. Her şeyin mümkün olduğu bir yeri hayal
+                                        ederim. Sevdiklerimin yanımda olduğu, kötülükten uzak bir yer. Ve aniden uzayın
+                                        derinliklerinde kaybolur giderim. Yıldızların ve rengarenk toz bulutlarının
+                                        arasında dolaşırım. Huzur içinde ölürüm.<br><br>Benimle bir seyahate
+                                        çık ve neler göreceğini hayal et.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-end ps-0 ps-md-3 pe-0">
+                    <div class="image-2">
+                        <div class="path h-100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-107">
+                <div class="col-md-6">
+                    <div class="hgroup">
+                        <%- include("components/hgroup.ejs", name="contact_tr" ) %>
+                    </div>
+                    <form name="contact" action="/">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                        required maxlength="75">
+                                    <label for="name">İsim</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="surname" name="surname"
+                                        placeholder="Surname" required maxlength="75">
+                                    <label for="surname">Soyisim</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                        required maxlength="75">
+                                    <label for="email">E-Posta</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        placeholder="Subject" required maxlength="75">
+                                    <label for="subject">Konu</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message"
+                                        required maxlength="750"></textarea>
+                                    <label for="message">Mesaj</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="isHuman" name="isHuman"
+                                        required>
+                                    <label class="form-check-label" for="isHuman">
+                                        Ben insanım <span class="isHumanWarning d-none"> | Lütfen kutucuğu işaretleyin!</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span class="messageStatus d-none">Mesajı gönderdiniz. Bravo 👏 Büyük iş başardın!</span>
+                            </div>
+                            <div class="col-12">
+                                <button id="send" class="btn"><span class="middle-finger-icon">🖕</span>Just Send it
+                                    B*tch</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 overflow-hidden px-0 pe-md-0">
+                    <img class="image-3 w-100" src="/public/images/retro-call.jpg" alt="Contact" loading="lazy">
+                </div>
+            </div>
+        </div>
         <%- include("./layout/footer.ejs") %>

@@ -44,7 +44,7 @@ $(".portfolio-gallery .title").on("hover", function () {
 }
 )
 
-$(document).on("ready", function () {
+$(document).on("DOMContentLoaded", function () {
     /* ======================== */
     /* ======================== */
     /* FORM ELEMENTS */
@@ -91,6 +91,7 @@ $(document).on("ready", function () {
     /* EMAIL INFORMATIONS */
     /* ======================== */
     /* ======================== */
+
     $("form[name='contact']").on("submit", function (e) {
         e.preventDefault()
 
@@ -133,19 +134,22 @@ $(document).on("ready", function () {
                 url: "/",
                 type: "POST",
                 data: formData,
+                beforeSend: function () {
+                    $(".messageStatus").text("Sending 😑").removeClass("d-none")
+                },
                 success: function (response) {
-                    $(".messageStatus").text("You just made a huge mistake. Sent it...").removeClass("d-none")
+                    $(".messageStatus").text("She got on her horse and left... 🐴").removeClass("d-none")
 
                     setTimeout(() => {
                         $(".messageStatus").addClass("d-none")
                     }, 3000)
                 },
                 error: function (err) {
-                    $(".messageStatus").text("This is a f*cking error. Try again or send me an email: webdvpv@gmail.com").removeClass("d-none")
+                    $(".messageStatus").text("This is a f*cking error. Try again later or send me an email right now: webdvpv@gmail.com").removeClass("d-none")
 
                     setTimeout(() => {
                         $(".messageStatus").addClass("d-none")
-                    }, 10000)
+                    }, 7000)
                 }
             })
         }
@@ -275,7 +279,7 @@ function formChanger(formName, self) {
     }
 }
 
-$(".go-to-register").on("click",function (e) {
+$(".go-to-register").on("click", function (e) {
     e.preventDefault()
     formChanger("register", this)
 })
@@ -365,14 +369,15 @@ $("form[name='register']").on({
 /* ======================== */
 $("#language").on('change', function () {
     lang = $(this).val()
+    console.log(lang);
 
     if (lang == "en") {
         $.ajax({
             url: "/",
             type: "POST",
-            data: {language: lang},
+            data: { language: lang },
             success: function () {
-                console.log("English language info sent successfully!")
+                window.location = "/"
             },
             error: function (err) {
                 toastr.error("There is a f*king problem 😑")
@@ -383,12 +388,12 @@ $("#language").on('change', function () {
         $.ajax({
             url: "/",
             type: "POST",
-            data: {language: lang},
+            data: { language: lang },
             success: function () {
-                console.log("Türkçe dil bilgisi başarıyla gönderildi!")
+                window.location = "/tr"
             },
             error: function (err) {
-                toastr.error("Bir hata var 😑")
+                toastr.error("Bir hata var seni yönlendiremiyorum 😑")
             }
         })
     }
