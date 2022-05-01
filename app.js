@@ -77,7 +77,7 @@ app.post("/", (req, res, next) => {
     /* ======================== */
     const hostMail = "webdvpv@gmail.com"
     const service = "gmail"
-    const password = ""
+    const password = "v01ka_-n"
 
     let name = req.body.name
     let surname = req.body.surname
